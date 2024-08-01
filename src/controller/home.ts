@@ -1,4 +1,4 @@
-const logout = document.querySelector('#logout') as HTMLButtonElement
+const logout = document.querySelector('#logout-button') as HTMLButtonElement
 
 
 logout.addEventListener('click', () => {
