@@ -14,7 +14,10 @@ export class PageController {
       },
       body: JSON.stringify(data),
     })
-    console.log(response.status)
+
+    if (response.status != 200) {
+      throw new Error('Error on login')
+    }
 
     const token: ILoginResponse = await response.json()
 
