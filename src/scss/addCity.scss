@@ -1,190 +1,69 @@
 @import './style.scss';
 
-.addCity-main {
-  width: 90%;
-  margin: 0 auto;
-  padding: 30px 0;
-
-  .addCity-title {
-    text-align: center;
-    margin-bottom: 30px;
-    align-items: center;
-  }
-
-  .form-container {
+.addCity-main{
+    width: 90%;
     margin: 0 auto;
-    width: 100%;
-    max-width: 700px;
-    min-width: 300px;
-    height: 430px;
-    border: 1px solid $gray;
-    padding: 30px;
+    padding: 30px 0;
 
-    #addCity-form {
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
-
-      .addCity-input {
-        width: 100%;
-        height: 35px;
-        border-radius: 8px;
-        border: 2px solid $gray;
-        padding: 0 10px;
-        background: $inputGray;
-        font-size: 16px;
-      }
-
-      .addCity-textarea {
-        width: 100%;
-        height: 90px;
-        border-radius: 8px;
-        border: 2px solid $gray;
-        padding: 10px;
-        background: $inputGray;
-        font-size: 16px;
-        resize: none;
-      }
-
-      .button-container {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-
-        .addCity-button {
-          width: 150px;
-          height: 40px;
-          border: none;
-          border-radius: 8px;
-          background: $lightBlue;
-          color: $white;
-          font-size: 16px;
-          cursor: pointer;
-        }
-      }
-
+    .addCity-title{
+        text-align: center;
+        margin-bottom: 30px;
     }
 
-  }
+    .form-container{
+        margin: 0 auto;
+        width: 100%;
+        max-width: 700px;
+        min-width: 300px;
+        height: 390px;
+        border: 1px solid $gray;
+        padding: 30px ;
+
+        #addCity-form{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+            .addCity-input{
+                width: 100%;
+                height: 35px;
+                border-radius: 8px;
+                border: 2px solid $gray;
+                padding: 0 10px;
+                background: $inputGray;
+                font-size: 16px;
+            }
+
+            .addCity-textarea{
+                width: 100%;
+                height: 90px;
+                border-radius: 8px;
+                border: 2px solid $gray;
+                padding: 10px;
+                background: $inputGray;
+                font-size: 16px;
+                resize: none;
+            }
+
+            .button-container{
+                width: 100%;
+                display: flex;
+                justify-content: center;
+
+                .addCity-button{
+                    width: 150px;
+                    height: 40px;
+                    border: none;
+                    border-radius: 8px;
+                    background: $lightBlue;
+                    color: $white;
+                    font-size: 16px;
+                    cursor: pointer;
+                }
+            }
+            
+        }
+        
+    }
 }
-
-
-@import './style.scss';
-@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
-
-#city-container {
-  display: flex;
-  flex-wrap: wrap; // Permite que las tarjetas se envuelvan a la siguiente línea
-  flex-direction: row;
-  margin-left: 40px;
-  gap: 20px; // Espacio entre las tarjetas
-  margin-top: 5%;
-}
-
-
-.city-info {
-  padding: 10px;
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-  justify-content: center;
-}
-
-.city-card {
-  flex: 1 1 calc(25% - 20px); // Ancho de las tarjetas con margen incluido
-  max-width: calc(25% - 20px); // Asegura que las tarjetas no se vuelvan más anchas que el 25% del contenedor
-  height: 380px; // Altura de las tarjetas
-  border-radius: 12px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  position: relative;
-  overflow: hidden; // Asegura que el contenido no se desborde
-  background-color: #fff; // Fondo blanco para las tarjetas
-  display: flex;
-  flex-direction: column; // Organiza el contenido en una columna
-  margin-bottom: 20px; // Espacio en la parte inferior de la tarjeta
-}
-
-.city-image {
-  width: 100%;
-  height: 205px;
-  border-top-left-radius: 12px;
-  border-top-right-radius: 12px;
-  object-fit: cover; // Asegura que la imagen se ajuste correctamente
-}
-
-.city-info-container {
-  padding: 15px;
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-  flex: 1; // Hace que el contenedor de información ocupe el espacio restante
-}
-
-.cross-container {
-  font-size: 30px;
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  color: gray;
-  display: none;
-  cursor: pointer;
-
-  &:hover {
-    color: red;
-  }
-}
-
-.city-card:hover .cross-container {
-  display: block; // Mostrar el ícono de cerrar al pasar el cursor
-}
-
-.city-url {
-  color: blue;
-  text-decoration: underline;
-  cursor: pointer;
-
-  &:hover {
-    color: darkblue;
-  }
-}
-
-.edit-button,
-.delete-button {
-  margin: 10px;
-  padding: 10px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.edit-button {
-  background-color: #4CAF50;
-  color: #fff;
-}
-
-.delete-button {
-  background-color: #f44336;
-  color: #fff;
-}
-
-
-.button-container {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  justify-content: space-between;
-
-}
-
-.city {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-top: 50px;
-}
-
-

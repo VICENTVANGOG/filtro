@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../scss/style.scss" />
     <link rel="stylesheet" href="../scss/addCity.scss" />
     <title>Document</title>
   </head>
@@ -14,6 +15,7 @@
       <nav>
         <ul class="nav-list">
           <li><a href="./home.html">Home</a></li>
+          <li><a href="">Agregar ciudad</a></li>
           <li><button id="logout-button">Log out</button></li>
         </ul>
       </nav>
@@ -29,34 +31,30 @@
             class="addCity-input"
             id="new-city"
             placeholder="Ciudad"
-            required
           />
           <input
             type="text"
             class="addCity-input"
             id="new-country"
             placeholder="Pais"
-            required
+          />
+          <input
+            type="url"
+            class="addCity-input"
+            id="new-img"
+            placeholder="URL imagen"
           />
           <textarea
             class="addCity-textarea"
             id="newCity-description"
             placeholder="Descripcion del analisis"
-            required
           ></textarea>
-          <input
-            type="url"
-            class="addCity-input"
-            id="new-image-url"
-            placeholder="URL de la imagen"
-            required
-          />
           <div class="button-container">
             <button type="submit" class="addCity-button">Agregar</button>
           </div>
         </form>
       </section>
     </main>
-    <script type="module" src="../controller/addCity.ts"></script>
+    <script type="module" src="../Controller/addCity.ts"></script>
   </body>
 </html>

@@ -3,38 +3,28 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../scss/addCity.scss" />
+    <link rel="stylesheet" href="../scss/style.scss" />
+    <link rel="stylesheet" href="../scss/home.scss" />
     <title>Document</title>
   </head>
   <body>
+    <div class="loader-container"></div>
     <header>
       <section class="headerTitle-container">
         <h1 class="headerTitle">Riwi Weather</h1>
       </section>
       <nav>
         <ul class="nav-list">
-          <li><a href="../view/home.html">Home</a></li>
-          <li><a href="../view/addCity.html">Agregar ciudad</a></li>
+          <li><a href="">Home</a></li>
+          <li><a href="./addCity.html">Agregar ciudad</a></li>
           <li><button id="logout-button">Log out</button></li>
-  
         </ul>
       </nav>
     </header>
-
-    <div class="city">  <h1>Lista de Ciudades</h1></div>
-
-        
-        
-        <div id="city-container"></div>
-
-
-
-  
-    
-
-    
+    <main class="home-main">
+      <h1 class="home-title">Ciudades</h1>
+      <section id="cards-section"></section>
     </main>
-    <script type="module" src="../controller/home.ts"></script>
-    <script type="module" src="../controller/card.ts"></script>
+    <script type="module" src="../Controller/home.ts"></script>
   </body>
 </html>
