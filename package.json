@@ -1,5 +1,5 @@
 {
-  "name": "filtro",
+  "name": "simulacro-ts",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -11,5 +11,11 @@
   "devDependencies": {
     "typescript": "^5.2.2",
     "vite": "^5.3.4"
+  },
+  "dependencies": {
+    "@popperjs/core": "^2.11.8",
+    "bootstrap": "^5.3.3",
+    "json-server": "^1.0.0-beta.1",
+    "sass": "^1.77.8"
   }
 }
